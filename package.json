@@ -10,7 +10,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "sb-build -o storybook-static",
+    "build-storybook": "storybook build",
     "prepublishOnly": "npm run build"
   },
   "repository": {
