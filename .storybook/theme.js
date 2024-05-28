@@ -6,7 +6,7 @@
  */
 
 import { create } from '@storybook/theming';
-import logo from '../public/cosmos-vertical.png';
+import logo from '../public/Cosmos-logo.svg';
 
 /**
  * @see https://storybook.js.org/docs/react/configure/theming

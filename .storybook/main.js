@@ -1,4 +1,6 @@
 /** @type { import('@storybook/vue3-webpack5').StorybookConfig } */
+import { withTests } from '@storybook/addon-jest';
+import results from '../public/jest-test-results.json';
 
 const config = {
   stories: [
@@ -23,6 +25,7 @@ const config = {
     '@storybook/addon-measure',
     '@storybook/addon-outline',
     '@storybook/addon-storysource',
+    '@storybook/addon-jest',
   ],
   framework: {
     name: '@storybook/vue3-webpack5',

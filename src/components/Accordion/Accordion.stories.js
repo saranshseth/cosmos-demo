@@ -1,6 +1,10 @@
 import Accordion from '../Accordion/Accordion.vue';
+import { withTests } from '@storybook/addon-jest';
+import results from '../../../public/jest-test-results.json';
+
 export default {
   title: 'Components/Accordion',
+  decorators: [withTests({ results })],
   component: Accordion,
   tags: ['autodocs'],
   argTypes: {

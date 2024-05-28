@@ -1,8 +1,11 @@
 import { action } from '@storybook/addon-actions';
 import TextField from '../TextField/TextField.vue';
+import { withTests } from '@storybook/addon-jest';
+import results from '../../../public/jest-test-results.json';
 
 export default {
   title: 'Components/TextField',
+  decorators: [withTests({ results })],
   component: TextField,
   tags: ['autodocs'],
   argTypes: {

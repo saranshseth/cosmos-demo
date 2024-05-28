@@ -1,8 +1,11 @@
 import { action } from '@storybook/addon-actions';
 import Button from '../Button/Button.vue';
+import { withTests } from '@storybook/addon-jest';
+import results from '../../../public/jest-test-results.json';
 
 export default {
   title: 'Components/Button',
+  decorators: [withTests({ results })],
   component: Button,
   tags: ['autodocs'],
   argTypes: {
